@@ -31,6 +31,8 @@ public class OrderItemFK implements Serializable {
     public void setProduct(Product product) {
         this.product = product;
     }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
