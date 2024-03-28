@@ -1,5 +1,6 @@
 package com.educandoweb.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -15,6 +16,7 @@ public class Payment implements Serializable {
     private Long id;
     private Instant moment;
     @OneToOne
+    @JsonIgnore
     @MapsId
     private Order order;
     public Payment(){
